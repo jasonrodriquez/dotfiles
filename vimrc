@@ -34,11 +34,12 @@ set nu
 
 " Color scheme
 if has('gui_running')
-          set background=dark
-            colorscheme solarized
-    else
-              colorscheme zenburn
-      endif
+        set background=dark
+        colorscheme solarized
+else
+        colorscheme zenburn
+endif
+
 
 call togglebg#map("<F5>")
 
