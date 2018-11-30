@@ -32,16 +32,7 @@ let python_highlight_all=1
 syntax on
 set nu
 
-" Color scheme
-if has('gui_running')
-        set background=dark
-        colorscheme solarized
-else
-        colorscheme zenburn
-endif
-
-
-call togglebg#map("<F5>")
+all togglebg#map("<F5>")
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
