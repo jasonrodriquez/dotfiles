@@ -6,8 +6,8 @@
 
 ########## Variables
 
-dir=~/git/dotfiles                    # dotfiles directory
-olddir=~/git/dotfiles_old             # old dotfiles backup directory
+dir=~/repos/dotfiles                    # dotfiles directory
+olddir=~/repos/dotfiles_old             # old dotfiles backup directory
 files="bash_profile vimrc"    # list of files/folders to symlink in homedir
 
 ##########
@@ -25,7 +25,7 @@ echo "...done"
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 for file in $files; do
 	echo "Moving any existing dotfiles from ~ to $olddir"
-	mv ~/.$file ~/git/dotfiles_old/
+	mv ~/.$file ~/repos/dotfiles_old/
 	echo "Creating symlink to $file in home directory."
 	ln -s $dir/$file ~/.$file
 done
